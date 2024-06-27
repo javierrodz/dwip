@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body { 
+            display: flex; 
+            flex-direction: column; 
+            min-height: 100vh; 
+        }
+        .content { 
+            flex: 1; 
+        }
+        .center-image { 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100%; 
+        }
+        .equipo { 
+            display: none; 
+        }
+        .equipo .card {
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src=".\images\logo1.png" alt="Joyería">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Acerca</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="content container mt-5">
+        <h1 class="text-center">About</h1>
+        <p class="text-center">Meet our company</p>
+        <div class="center-image">
+            <img src=".\images\logo.jpg" alt="Imagen centrada" class="img-fluid">
+        </div>
+        <div class="container mt-5">
+            <h1>Equipo de Trabajo</h1>
+            <div class="col text-center">
+              <button id="toggleEquipo" class="btn btn-dark mb-4">Mostrar Equipo de Trabajo</button>
+            </div>
+            
+            <div class="equipo">
+                <div class="row">
+                    <div class="col-md-3 mb-4">
+                      <div class="card">
+                        <img src="ruta/al/imagen1.jpg" class="card-img-top" alt="Juan Pérez">
+                        <div class="card-body">
+                          <h5 class="card-title">Juan Pérez</h5>
+                          <p class="card-text">Desarrollador web con experiencia en HTML, CSS y JavaScript. Apasionado por la creación de sitios web innovadores.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                      <div class="card">
+                        <img src="ruta/al/imagen2.jpg" class="card-img-top" alt="María Rodríguez">
+                        <div class="card-body">
+                          <h5 class="card-title">María Rodríguez</h5>
+                          <p class="card-text">Diseñadora gráfica con habilidades en Photoshop e Illustrator. Especializada en la creación de interfaces intuitivas y atractivas.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                      <div class="card">
+                        <img src="ruta/al/imagen3.jpg" class="card-img-top" alt="Carlos Gutiérrez">
+                        <div class="card-body">
+                          <h5 class="card-title">Carlos Gutiérrez</h5>
+                          <p class="card-text">Especialista en marketing digital con experiencia en SEO, SEM y redes sociales. Apasionado por el análisis de datos y la optimización de estrategias.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                      <div class="card">
+                        <img src="ruta/al/imagen4.jpg" class="card-img-top" alt="Laura Martínez">
+                        <div class="card-body">
+                          <h5 class="card-title">Laura Martínez</h5>
+                          <p class="card-text">Desarrolladora full-stack con experiencia en tecnologías como Node.js, React y MongoDB. Apasionada por la resolución de problemas y la mejora continua.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-3 mb-4">
+                      <div class="card">
+                        <img src="ruta/al/imagen5.jpg" class="card-img-top" alt="Roberto López">
+                        <div class="card-body">
+                          <h5 class="card-title">Roberto López</h5>
+                          <p class="card-text">Desarrollador front-end con experiencia en frameworks como Angular y Vue.js. Apasionado por la creación de experiencias de usuario memorables.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                      <div class="card">
+                        <img src="ruta/al/imagen6.jpg" class="card-img-top" alt="Ana García">
+                        <div class="card-body">
+                          <h5 class="card-title">Ana García</h5>
+                          <p class="card-text">Diseñadora UX/UI con experiencia en prototipado y diseño de interfaces centradas en el usuario. Apasionada por la investigación y el diseño colaborativo.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                      <div class="card">
+                        <img src="ruta/al/imagen7.jpg" class="card-img-top" alt="Pedro Ramírez">
+                        <div class="card-body">
+                          <h5 class="card-title">Pedro Ramírez</h5>
+                          <p class="card-text">Especialista en marketing de contenidos con experiencia en estrategias de inbound marketing y creación de contenido persuasivo. Apasionado por la narrativa digital y el storytelling.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                      <div class="card">
+                        <img src="ruta/al/imagen8.jpg" class="card-img-top" alt="Sofía González">
+                        <div class="card-body">
+                          <h5 class="card-title">Sofía González</h5>
+                          <p class="card-text">Desarrolladora back-end con experiencia en tecnologías como Python, Django y MySQL. Apasionada por la optimización de procesos y la seguridad informática.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-light text-center text-lg-start">
+        <div class="text-center p-3">
+            © 2024 Jewelry
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById('toggleEquipo').addEventListener('click', function() {
+            const equipo = document.querySelector('.equipo');
+            if (equipo.style.display === 'none' || equipo.style.display === '') {
+                equipo.style.display = 'block';
+                this.textContent = 'Ocultar Equipo de Trabajo';
+            } else {
+                equipo.style.display = 'none';
+                this.textContent = 'Mostrar Equipo de Trabajo';
+            }
+        });
+
+        window.addEventListener('scroll', function() {
+            const equipoCards = document.querySelectorAll('.equipo .card');
+            equipoCards.forEach(card => {
+                const rect = card.getBoundingClientRect();
+                if (rect.top >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)) {
+                    card.style.opacity = 1;
+                }
+            });
+        });
+
+        document.addEventListener('keypress', function(event) {
+            const key = event.key.toLowerCase();
+            if (key === 'a' || key === 'b') {
+                createDynamicElement(`Elemento ${key.toUpperCase()}`);
+                alert('Gracias por presionar');
+            }
+        });
+        function createDynamicElement(text) {
+            const newElement = document.createElement('div');
+            newElement.className = 'alert alert-info mt-4';
+            newElement.textContent = text;
+            document.querySelector('.content').appendChild(newElement);
+        }
+    </script>
+</body>
+</html>
